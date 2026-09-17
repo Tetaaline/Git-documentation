@@ -458,3 +458,81 @@ git pull        → Get and integrate remote changes
 ```
 
 ---
+
+# 38. Common Troubleshooting
+
+### "I don't know what is happening."
+
+```bash
+git status
+```
+
+### "I want to see what I changed."
+
+```bash
+git diff
+```
+
+### "I accidentally staged a file."
+
+```bash
+git restore --staged filename
+```
+
+### "I want to discard my changes."
+
+```bash
+git restore filename
+```
+
+### "I need to temporarily put my work aside."
+
+```bash
+git stash
+```
+
+### "I want my work back."
+
+```bash
+git stash pop
+```
+
+### "I need to see previous commits."
+
+```bash
+git log --oneline
+```
+
+### "I want to know which remote I'm connected to."
+
+```bash
+git remote -v
+```
+
+### "I need the latest version from GitHub."
+
+```bash
+git pull
+```
+
+### "I want to upload my committed work."
+
+```bash
+git push
+```
+
+### "I accidentally made a bad commit."
+
+If it has not been shared:
+
+```bash
+git reset --soft HEAD~1
+```
+
+If it has already been shared:
+
+```bash
+git revert <commit-id>
+```
+
+---
