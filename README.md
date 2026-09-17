@@ -383,3 +383,78 @@ A---B---C main
 | `git help` | Get Git documentation |
 
 ---
+
+# 37. The Commands You Should Know First
+
+Although Git has many commands, these are the core commands to become comfortable with:
+
+```bash
+git status
+git add .
+git commit -m "message"
+git push
+git pull
+git clone <url>
+
+git branch
+git switch -c <branch>
+git switch <branch>
+git merge <branch>
+
+git remote -v
+git fetch
+
+git log --oneline
+git diff
+
+git restore <file>
+git restore --staged <file>
+
+git stash
+git revert <commit>
+```
+
+### The basic mental model
+
+Remember Git as:
+
+```text
+                    GIT WORKFLOW
+
+     Edit/Create Files
+            │
+            ▼
+       git status
+            │
+            ▼
+         git add
+            │
+            ▼
+      Staging Area
+            │
+            ▼
+       git commit
+            │
+            ▼
+     Local Repository
+            │
+            ▼
+         git push
+            │
+            ▼
+          GitHub
+```
+
+And when someone else changes the GitHub repository:
+
+```text
+GitHub
+   │
+   ▼
+git fetch       → See/download remote changes
+   │
+   ▼
+git pull        → Get and integrate remote changes
+```
+
+---
