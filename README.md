@@ -114,3 +114,51 @@ git co main
 
 ---
 
+# 31. Useful Git Information Commands
+
+## `git branch -vv`
+
+Shows local branches and their upstream branches.
+
+```bash
+git branch -vv
+```
+
+Useful for seeing which remote branch your local branch is connected to.
+
+---
+
+## `git remote show`
+
+Shows information about a remote repository.
+
+```bash
+git remote show origin
+```
+
+---
+
+## `git ls-files`
+
+Lists files currently tracked by Git.
+
+```bash
+git ls-files
+```
+
+---
+
+## `git rev-parse`
+
+Can be used to inspect Git references and repository information.
+
+Example:
+
+```bash
+git rev-parse --show-toplevel
+```
+
+Shows the root directory of the repository.
+
+---
+
