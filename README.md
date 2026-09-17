@@ -344,3 +344,42 @@ A---B---C main
 
 ---
 
+# 36. Essential Command Reference
+
+| Command | Purpose |
+|---|---|
+| `git --version` | Check Git version |
+| `git config` | Configure Git |
+| `git init` | Create repository |
+| `git clone` | Copy remote repository |
+| `git status` | Check repository status |
+| `git add` | Stage changes |
+| `git commit` | Save changes |
+| `git commit --amend` | Modify latest commit |
+| `git diff` | View changes |
+| `git log` | View commit history |
+| `git show` | View commit details |
+| `git branch` | Create/list/delete branches |
+| `git switch` | Switch branches |
+| `git checkout` | Older branch/file command |
+| `git merge` | Merge branches |
+| `git rebase` | Reapply commits on another base |
+| `git remote` | Manage remote repositories |
+| `git fetch` | Download remote information |
+| `git pull` | Fetch and integrate remote changes |
+| `git push` | Upload commits |
+| `git restore` | Restore files/unstage changes |
+| `git reset` | Move branch/undo commits |
+| `git revert` | Undo a commit with a new commit |
+| `git rm` | Remove tracked files |
+| `git stash` | Temporarily save changes |
+| `git tag` | Mark project versions |
+| `git blame` | Show who changed each line |
+| `git reflog` | View reference history |
+| `git bisect` | Find a problematic commit |
+| `git clean` | Remove untracked files |
+| `git shortlog` | Summarize commits |
+| `git ls-files` | List tracked files |
+| `git help` | Get Git documentation |
+
+---
