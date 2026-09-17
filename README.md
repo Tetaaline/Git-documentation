@@ -219,3 +219,128 @@ git push -u origin feature-login
 The branch can then be reviewed and merged into `main` through a **Pull Request** on GitHub.
 
 ---
+
+# 34. Common Complete Workflows
+
+## A. Starting a new local project
+
+```bash
+mkdir my-project
+cd my-project
+git init
+
+git add .
+git commit -m "Initial commit"
+```
+
+---
+
+## B. Connecting a local project to GitHub
+
+```bash
+git remote add origin <repository-url>
+git branch -M main
+git push -u origin main
+```
+
+---
+
+## C. Cloning an existing GitHub project
+
+```bash
+git clone <repository-url>
+cd project-name
+```
+
+---
+
+## D. Making normal changes
+
+```bash
+git status
+git add .
+git commit -m "Update project"
+git push
+```
+
+---
+
+## E. Starting a new feature
+
+```bash
+git switch main
+git pull
+
+git switch -c feature-login
+
+# Work on the feature
+
+git add .
+git commit -m "Add login page"
+git push -u origin feature-login
+```
+
+---
+
+## F. Updating your branch
+
+```bash
+git switch main
+git pull
+
+git switch feature-login
+git merge main
+```
+
+Or, depending on the team's workflow:
+
+```bash
+git switch feature-login
+git rebase main
+```
+
+---
+
+# 35. `git merge` vs `git rebase`
+
+Both can bring changes from one branch into another, but they work differently.
+
+### Merge
+
+```bash
+git merge main
+```
+
+Combines histories and may create a merge commit.
+
+### Rebase
+
+```bash
+git rebase main
+```
+
+Moves your commits so they appear on top of the latest `main`.
+
+Simplified:
+
+```text
+MERGE
+
+A---B---C main
+     \
+      D---E feature
+           \
+            merge
+
+
+REBASE
+
+A---B---C main
+         \
+          D'---E' feature
+```
+
+> Rebase rewrites commit history. Avoid rebasing commits that other people are already using unless your team has agreed on it.
+
+---
+
