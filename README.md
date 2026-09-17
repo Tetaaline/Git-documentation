@@ -78,3 +78,39 @@ git clean -f
 ```
 
 ---
+# 30. Git Aliases
+
+Aliases allow you to create shorter commands.
+
+Example:
+
+```bash
+git config --global alias.st status
+```
+
+Now:
+
+```bash
+git st
+```
+
+does the same thing as:
+
+```bash
+git status
+```
+
+Another example:
+
+```bash
+git config --global alias.co checkout
+```
+
+Then:
+
+```bash
+git co main
+```
+
+---
+
