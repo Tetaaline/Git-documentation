@@ -57,3 +57,24 @@ git bisect reset
 ```
 
 ---
+# 29. Cleaning Untracked Files
+
+## `git clean -n`
+
+Shows which untracked files would be removed without actually removing them.
+
+```bash
+git clean -n
+```
+
+---
+
+## `git clean -f`
+
+Deletes untracked files.
+
+```bash
+git clean -f
+```
+
+---
