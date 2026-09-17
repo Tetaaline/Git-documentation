@@ -162,3 +162,60 @@ Shows the root directory of the repository.
 
 ---
 
+# 32. Getting Help
+
+## `git help`
+
+Displays general Git documentation.
+
+```bash
+git help
+```
+
+For a specific command:
+
+```bash
+git help commit
+```
+
+You can also use:
+
+```bash
+git commit --help
+```
+
+---
+
+# 33. GitHub Collaboration Commands
+
+When working with other developers, a common workflow is:
+
+```text
+main
+  │
+  ├── feature-login
+  │
+  ├── feature-dashboard
+  │
+  └── feature-profile
+```
+
+Each developer can work on a separate branch.
+
+Typical process:
+
+```bash
+git pull
+git switch -c feature-login
+
+# Make changes
+
+git status
+git add .
+git commit -m "Add login page"
+git push -u origin feature-login
+```
+
+The branch can then be reviewed and merged into `main` through a **Pull Request** on GitHub.
+
+---
