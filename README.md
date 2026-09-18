@@ -100,3 +100,53 @@ git switch feature-login
 if Git can automatically identify the matching remote branch.
 
  git push --set-upstream origin flavia
+ # 16. Merging Branches
+
+## `git merge`
+
+Combines another branch into the current branch.
+
+Example:
+
+```bash
+git switch main
+git merge feature-login
+```
+
+This means:
+
+> Merge `feature-login` into `main`.
+
+The order matters: you switch to the branch that should receive the changes.
+
+---
+
+# 17. Merge Conflicts
+
+A merge conflict occurs when Git cannot automatically combine changes.
+
+For example:
+
+```text
+<<<<<<< HEAD
+Your version
+=======
+Other version
+>>>>>>> feature-login
+```
+
+You must manually edit the file and decide what the final version should contain.
+
+Then:
+
+```bash
+git add .
+git commit
+```
+
+If you want to cancel the merge:
+
+```bash
+git merge --abort
+```
+
