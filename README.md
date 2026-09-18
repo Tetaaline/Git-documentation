@@ -420,3 +420,78 @@ Then:
 git add .
 git commit -m "Add gitignore"
 ```
+# 25. Tags
+
+Tags are used to mark specific versions of a project.
+
+For example:
+
+```text
+v1.0
+v2.0
+v2.1
+```
+
+## Create a tag
+
+```bash
+git tag v1.0
+```
+
+---
+
+## Create an annotated tag
+
+```bash
+git tag -a v1.0 -m "Version 1.0"
+```
+
+Annotated tags store additional information and are commonly used for releases.
+
+---
+
+## List tags
+
+```bash
+git tag
+```
+
+---
+
+## Show tag information
+
+```bash
+git show v1.0
+```
+
+---
+
+## Push a tag
+
+```bash
+git push origin v1.0
+```
+
+Push all tags:
+
+```bash
+git push origin --tags
+```
+
+---
+
+## Delete a local tag
+
+```bash
+git tag -d v1.0
+```
+
+---
+
+## Delete a remote tag
+
+```bash
+git push origin --delete v1.0
+```
+
+---
