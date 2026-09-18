@@ -393,3 +393,30 @@ git rm --cached .env
 Then add `.env` to `.gitignore`.
 
 ---
+# 24. `.gitignore`
+
+`.gitignore` tells Git which files should not be tracked.
+
+Example:
+
+```text
+node_modules/
+.env
+*.log
+dist/
+```
+
+Common things to ignore:
+
+- Passwords and secrets
+- Environment files
+- Dependencies
+- Temporary files
+- Build files
+
+Then:
+
+```bash
+git add .
+git commit -m "Add gitignore"
+```
