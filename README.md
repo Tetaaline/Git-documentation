@@ -463,3 +463,23 @@ git checkout -b feature-login
 Modern Git generally recommends `git switch` for switching branches.
 
 ---
+
+# 10. Renaming Branches
+
+## `git branch -M`
+
+Renames the current branch.
+
+```bash
+git branch -M main
+```
+
+`-M` means forcefully rename the branch.
+
+A common use is changing:
+
+```text
+master → main
+```
+
+---
