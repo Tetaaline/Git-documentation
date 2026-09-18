@@ -507,3 +507,119 @@ git branch -D feature-login
 > Use `-D` carefully.
 
 ---
+
+# 12. Remote Repositories
+
+A **remote** is a repository stored somewhere else, usually on GitHub.
+
+## `git remote -v`
+
+Shows connected remote repositories.
+
+```bash
+git remote -v
+```
+
+Example:
+
+```text
+origin  https://github.com/user/project.git (fetch)
+origin  https://github.com/user/project.git (push)
+```
+
+---
+
+## `git remote add`
+
+Connects your local repository to a remote repository.
+
+```bash
+git remote add origin <repository-url>
+```
+
+Example:
+
+```bash
+git remote add origin https://github.com/user/project.git
+```
+
+### What is `origin`?
+
+`origin` is the conventional name for the main remote repository. It is simply a name that points to the remote URL.
+
+---
+
+## `git remote remove`
+
+Removes a remote connection.
+
+```bash
+git remote remove origin
+```
+
+---
+
+## `git remote rename`
+
+Renames a remote.
+
+```bash
+git remote rename origin upstream
+```
+
+---
+
+## `git remote get-url`
+
+Shows the URL of a remote.
+
+```bash
+git remote get-url origin
+```
+
+---
+
+# 13. Pushing to GitHub
+
+## `git push`
+
+Uploads local commits to the remote repository.
+
+```bash
+git push
+```
+
+---
+
+## `git push -u origin main`
+
+Pushes the `main` branch and establishes an upstream connection.
+
+```bash
+git push -u origin main
+```
+
+### Understanding the command
+
+```text
+git push -u origin main
+          │      │
+          │      └── remote branch
+          └──────── remote name
+```
+
+`-u` means **set upstream**.
+
+After doing this once, you can usually simply use:
+
+```bash
+git push
+```
+
+---
+
+## Push a new branch
+
+```bash
+git push -u origin feature-login
+```
