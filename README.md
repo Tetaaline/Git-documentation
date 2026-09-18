@@ -173,3 +173,43 @@ git diff --staged
 This is useful before committing to check exactly what will be included.
 
 ---
+
+# 5. Understanding the Git Workflow
+
+Git commonly follows this process:
+
+```text
+Working Directory
+       ↓
+   git add
+       ↓
+Staging Area
+       ↓
+  git commit
+       ↓
+Local Repository
+       ↓
+   git push
+       ↓
+Remote Repository (GitHub)
+```
+
+For example:
+
+```bash
+# 1. Make changes
+
+# 2. Check them
+git status
+
+# 3. Stage them
+git add .
+
+# 4. Save them
+git commit -m "Add login page"
+
+# 5. Upload them
+git push
+```
+
+---
