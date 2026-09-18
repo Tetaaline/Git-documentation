@@ -150,3 +150,35 @@ If you want to cancel the merge:
 git merge --abort
 ```
 
+18. Restoring Files
+
+## `git restore`
+
+Discards unstaged changes in a file.
+
+```bash
+git restore index.html
+```
+
+⚠️ The uncommitted changes in that file will be lost.
+
+---
+
+## `git restore --staged`
+
+Removes a file from the staging area without deleting your changes.
+
+```bash
+git restore --staged index.html
+```
+
+Example:
+
+```bash
+git add index.html
+git restore --staged index.html
+```
+
+The file remains modified, but it is no longer staged.
+
+---
