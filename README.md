@@ -495,3 +495,17 @@ git push origin --delete v1.0
 ```
 
 ---
+
+# 26. Finding Who Changed Something
+
+## `git blame`
+
+Shows who last modified each line of a file.
+
+```bash
+git blame index.html
+```
+
+Useful when working on a team and trying to understand the history of a particular line.
+
+---
