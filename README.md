@@ -356,3 +356,40 @@ This shows commits in `feature-login` that are not in `main`.
 ---
 
 
+23. Removing Files
+
+## `git rm`
+
+Removes a file from your project and stages the deletion.
+
+```bash
+git rm file.txt
+```
+
+Then:
+
+```bash
+git commit -m "Remove unnecessary file"
+```
+
+---
+
+## `git rm --cached`
+
+Stops tracking a file but keeps it on your computer.
+
+```bash
+git rm --cached file.txt
+```
+
+This is useful when you accidentally tracked a file that should not be committed.
+
+For example:
+
+```bash
+git rm --cached .env
+```
+
+Then add `.env` to `.gitignore`.
+
+---
