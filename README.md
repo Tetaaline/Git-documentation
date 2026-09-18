@@ -99,3 +99,4 @@ git switch feature-login
 
 if Git can automatically identify the matching remote branch.
 
+ git push --set-upstream origin flavia
