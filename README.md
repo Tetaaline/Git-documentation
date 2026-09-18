@@ -377,3 +377,89 @@ git show HEAD
 ```
 
 ---
+
+# 9. Branches
+
+A **branch** is a separate line of development.
+
+For example:
+
+```text
+main
+ │
+ ├── feature-login
+ │
+ └── feature-dashboard
+```
+
+Branches allow you to work on features without directly changing `main`.
+
+---
+
+## `git branch`
+
+Lists local branches.
+
+```bash
+git branch
+```
+
+Example:
+
+```text
+* main
+  feature-login
+  feature-dashboard
+```
+
+`*` indicates the branch you are currently using.
+
+---
+
+## Create a branch
+
+```bash
+git branch feature-login
+```
+
+This creates the branch but does not switch to it.
+
+---
+
+## `git switch`
+
+Switches to another branch.
+
+```bash
+git switch feature-login
+```
+
+---
+
+## Create and switch to a branch
+
+```bash
+git switch -c feature-login
+```
+
+`-c` means **create**.
+
+---
+
+## `git checkout`
+
+Older Git command that can also switch branches.
+
+```bash
+git checkout feature-login
+```
+
+Create and switch:
+
+```bash
+git checkout -b feature-login
+```
+
+Modern Git generally recommends `git switch` for switching branches.
+
+---
