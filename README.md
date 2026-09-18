@@ -24,3 +24,102 @@ It allows you to:
 | Uses Git commands | Provides pull requests, issues, etc. |
 
 ---
+
+# 2. Git Configuration
+
+These commands are normally used when setting up Git for the first time.
+
+## `git --version`
+
+Checks whether Git is installed.
+
+```bash
+git --version
+```
+
+Example:
+
+```text
+git version 2.51.0
+```
+
+---
+
+## `git config`
+
+Used to configure Git settings.
+
+### Set your username
+
+```bash
+git config --global user.name "Your Name"
+```
+
+### Set your email
+
+```bash
+git config --global user.email "you@example.com"
+```
+
+### View your configuration
+
+```bash
+git config --list
+```
+
+### Check a specific setting
+
+```bash
+git config user.name
+git config user.email
+```
+
+> `--global` means the setting applies to all repositories on your computer.
+
+---
+
+# 3. Creating or Downloading a Repository
+
+## `git init`
+
+Creates a new Git repository in the current folder.
+
+```bash
+git init
+```
+
+Example:
+
+```bash
+mkdir student-project
+cd student-project
+git init
+```
+
+Git creates a hidden `.git` directory that stores the repository's history and configuration.
+
+---
+
+## `git clone`
+
+Downloads an existing repository from GitHub or another Git server.
+
+```bash
+git clone <repository-url>
+```
+
+Example:
+
+```bash
+git clone https://github.com/user/student-project.git
+```
+
+Then enter the project:
+
+```bash
+cd student-project
+```
+
+> Use `git clone` when the repository already exists online. Use `git init` when starting a new local project.
+
+---
