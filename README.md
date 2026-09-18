@@ -233,4 +233,83 @@ git revert a82f31c
 
 For commits that have already been pushed and shared, `git revert` is generally safer because it preserves the existing history.
 
+---# 21. Stashing Work
+
+Sometimes you have unfinished changes but need to switch branches.
+
+## `git stash`
+
+Temporarily saves uncommitted changes.
+
+```bash
+git stash
+```
+
+Your working directory becomes clean.
+
 ---
+
+## `git stash list`
+
+Shows saved stashes.
+
+```bash
+git stash list
+```
+
+Example:
+
+```text
+stash@{0}: WIP on feature-login
+stash@{1}: WIP on main
+```
+
+---
+
+## `git stash pop`
+
+Restores the most recent stash and removes it from the stash list.
+
+```bash
+git stash pop
+```
+
+---
+
+## `git stash apply`
+
+Restores a stash but keeps it in the stash list.
+
+```bash
+git stash apply
+```
+
+---
+
+## Apply a specific stash
+
+```bash
+git stash apply stash@{1}
+```
+
+---
+
+## `git stash drop`
+
+Deletes a stash.
+
+```bash
+git stash drop
+```
+
+---
+
+## `git stash clear`
+
+Deletes all stashes.
+
+```bash
+git stash clear
+```
+
+
