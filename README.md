@@ -213,3 +213,96 @@ git push
 ```
 
 ---
+
+# 6. Adding Changes
+
+## `git add`
+
+Moves changes to the staging area.
+
+### Add one file
+
+```bash
+git add index.html
+```
+
+### Add multiple files
+
+```bash
+git add index.html style.css script.js
+```
+
+### Add all changes
+
+```bash
+git add .
+```
+
+> `git add .` stages changes in the current directory.
+
+---
+
+## `git add -A`
+
+Stages all changes in the repository, including additions, modifications, and deletions.
+
+```bash
+git add -A
+```
+
+For most normal projects, `git add .` is convenient, while `git add -A` is useful when you specifically want everything staged.
+
+---
+
+# 7. Saving Changes
+
+## `git commit`
+
+Creates a permanent snapshot of staged changes.
+
+```bash
+git commit -m "Add login page"
+```
+
+`-m` means **message**.
+
+A good commit message describes what changed.
+
+```bash
+git commit -m "Fix student login validation"
+```
+
+---
+
+## `git commit -am`
+
+Stages modified/deleted tracked files and commits them.
+
+```bash
+git commit -am "Update homepage"
+```
+
+> It does **not** include new untracked files. New files must be added first with `git add`.
+
+---
+
+## `git commit --amend`
+
+Modifies the most recent commit.
+
+For example, if you forgot to include a file:
+
+```bash
+git add missing-file.html
+git commit --amend
+```
+
+To change only the commit message:
+
+```bash
+git commit --amend -m "Correct commit message"
+```
+
+> Be careful when amending commits that have already been pushed and shared with others.
+
+---
