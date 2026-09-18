@@ -13,3 +13,14 @@ It allows you to:
 - Undo mistakes
 - Collaborate with other developers
 - Connect your local project to GitHub
+
+### Git vs GitHub
+
+| Git | GitHub |
+|---|---|
+| Software installed on your computer | Online platform |
+| Tracks project history | Hosts Git repositories |
+| Works locally | Used for sharing/collaboration |
+| Uses Git commands | Provides pull requests, issues, etc. |
+
+---
