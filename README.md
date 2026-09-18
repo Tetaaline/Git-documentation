@@ -160,7 +160,6 @@ Discards unstaged changes in a file.
 git restore index.html
 ```
 
-⚠️ The uncommitted changes in that file will be lost.
 
 ---
 
@@ -182,3 +181,32 @@ git restore --staged index.html
 The file remains modified, but it is no longer staged.
 
 ---
+# 19. Undoing Commits
+
+## `git reset`
+
+Moves the current branch to another commit.
+
+### Soft reset
+
+```bash
+git reset --soft HEAD~1
+```
+
+Removes the last commit but keeps the changes staged.
+
+### Mixed reset
+
+```bash
+git reset HEAD~1
+```
+
+Removes the last commit and unstages the changes, but keeps the files' changes.
+
+### Hard reset
+
+```bash
+git reset --hard HEAD~1
+```
+
+Removes the last commit and its changes.
