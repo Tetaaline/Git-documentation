@@ -210,3 +210,27 @@ git reset --hard HEAD~1
 ```
 
 Removes the last commit and its changes.
+# 20. `git revert`
+
+Creates a new commit that reverses the changes introduced by an earlier commit.
+
+```bash
+git revert <commit-id>
+```
+
+Example:
+
+```bash
+git revert a82f31c
+```
+
+### Reset vs Revert
+
+| Command | What it does |
+|---|---|
+| `git reset` | Moves the branch backward |
+| `git revert` | Creates a new commit that undoes an earlier commit |
+
+For commits that have already been pushed and shared, `git revert` is generally safer because it preserves the existing history.
+
+---
