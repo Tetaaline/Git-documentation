@@ -306,3 +306,74 @@ git commit --amend -m "Correct commit message"
 > Be careful when amending commits that have already been pushed and shared with others.
 
 ---
+
+# 8. Viewing Commit History
+
+## `git log`
+
+Shows the commit history.
+
+```bash
+git log
+```
+
+---
+
+## `git log --oneline`
+
+Shows commits in a shorter format.
+
+```bash
+git log --oneline
+```
+
+Example:
+
+```text
+a82f31c Add login page
+72ab921 Create homepage
+43cd221 Initial commit
+```
+
+---
+
+## `git log --oneline --graph --all`
+
+Displays branches and commits visually.
+
+```bash
+git log --oneline --graph --all
+```
+
+Example:
+
+```text
+* a82f31c Add login
+| * 72ab921 Add dashboard
+|/
+* 43cd221 Initial commit
+```
+
+---
+
+## `git show`
+
+Displays information about a specific commit.
+
+```bash
+git show <commit-id>
+```
+
+Example:
+
+```bash
+git show a82f31c
+```
+
+To show the latest commit:
+
+```bash
+git show HEAD
+```
+
+---
