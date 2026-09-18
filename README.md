@@ -483,3 +483,27 @@ master → main
 ```
 
 ---
+
+# 11. Deleting Branches
+
+## Delete a local branch
+
+```bash
+git branch -d feature-login
+```
+
+`-d` safely deletes a branch that has been merged.
+
+---
+
+## Force delete a local branch
+
+```bash
+git branch -D feature-login
+```
+
+`-D` forces deletion even if the branch has unmerged changes.
+
+> Use `-D` carefully.
+
+---
