@@ -123,3 +123,53 @@ cd student-project
 > Use `git clone` when the repository already exists online. Use `git init` when starting a new local project.
 
 ---
+
+# 4. Checking the Repository
+
+## `git status`
+
+Shows the current state of your repository.
+
+```bash
+git status
+```
+
+It tells you:
+
+- Current branch
+- Modified files
+- Untracked files
+- Staged files
+- Whether your branch is ahead or behind the remote
+
+> **Tip:** When you don't know what to do next, run `git status`.
+
+---
+
+## `git diff`
+
+Shows changes that have not been staged.
+
+```bash
+git diff
+```
+
+Example:
+
+```bash
+git diff index.html
+```
+
+---
+
+## `git diff --staged`
+
+Shows changes that are already staged.
+
+```bash
+git diff --staged
+```
+
+This is useful before committing to check exactly what will be included.
+
+---
