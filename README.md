@@ -311,5 +311,48 @@ Deletes all stashes.
 ```bash
 git stash clear
 ```
+ 22. Comparing Changes
+
+## Compare working changes
+
+```bash
+git diff
+```
+
+---
+
+## Compare staged changes
+
+```bash
+git diff --staged
+```
+
+---
+
+## Compare two branches
+
+```bash
+git diff main feature-login
+```
+
+---
+
+## Compare two commits
+
+```bash
+git diff <commit1> <commit2>
+```
+
+---
+
+## Find commits that exist in one branch but not another
+
+```bash
+git log main..feature-login
+```
+
+This shows commits in `feature-login` that are not in `main`.
+
+---
 
 
